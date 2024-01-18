@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var toggle = UISegmentedControl(items: ["easyportrait","face-parsing"])
     var timeLabel = UILabel()
     var isMultiParts = true
-    let image = UIImage(named: "sample1")
+    let image = UIImage(named: "sample2")
     var classNames = ["lips","left brow", "background","teeth","right eye","skin","blank","left eye","right brow"]
 
     override func viewDidLoad() {
@@ -31,11 +31,12 @@ class ViewController: UIViewController {
         let easyPortraitModel = try! easyportrait(configuration: MLModelConfiguration()).model
         let vnEasyPortraitModel = try! VNCoreMLModel(for: easyPortraitModel)
         easyPortraitRequest = VNCoreMLRequest(model: vnEasyPortraitModel)
-        
+        easyPortraitRequest.imageCropAndScaleOption = .scaleFill
         let faceParsingModel = try! skin(configuration: MLModelConfiguration()).model
         let vnFaceParsingModel = try! VNCoreMLModel(for: faceParsingModel)
         faceParsingRequest = VNCoreMLRequest(model: vnFaceParsingModel)
-        
+        faceParsingRequest.imageCropAndScaleOption = .scaleFill
+
         request = easyPortraitRequest
     }
     
@@ -68,6 +69,7 @@ class ViewController: UIViewController {
 
         let ciImage = CIImage(image: image!)
         let handler = VNImageRequestHandler(ciImage: ciImage!)
+        
         let startTime = Date()
         try! handler.perform([request])
         guard let result = request.results?[partsIndex] as? VNPixelBufferObservation else {fatalError()}
@@ -83,7 +85,7 @@ class ViewController: UIViewController {
 
         let time = Date().timeIntervalSince(startTime)
         print(time)
-        let resultCIImage = CIImage(cvPixelBuffer: result.pixelBuffer)
+        let resultCIImage = CIImage(cvPixelBuffer: result.pixelBuffer).resize(as: image!.size)
         let resultUIImage = UIImage(ciImage: resultCIImage)
         DispatchQueue.main.async {
             self.imageView.image = resultUIImage
@@ -130,3 +132,10 @@ class ViewController: UIViewController {
 
 }
 
+extension CIImage {
+    func resize(as size: CGSize) -> CIImage {
+        let selfSize = extent.size
+        let transform = CGAffineTransform(scaleX: size.width / selfSize.width, y: size.height / selfSize.height)
+        return transformed(by: transform)
+    }
+}
