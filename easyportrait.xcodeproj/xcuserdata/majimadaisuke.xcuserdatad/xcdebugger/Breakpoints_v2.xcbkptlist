@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F67DDE53-9B57-4CC4-B968-4287ABCF5754"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C547079-2323-4195-8572-81C904A3E7A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "easyportrait/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "inference()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C547079-2323-4195-8572-81C904A3E7A8 - 5dd6c1a3b66285f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyportrait.ViewController.inference() -&gt; ()"
+                  moduleName = "easyportrait"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/majimadaisuke/Downloads/easyportrait/easyportrait/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "3C547079-2323-4195-8572-81C904A3E7A8 - 5dd6c1a3b6628594"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "easyportrait.ViewController.inference() -&gt; ()"
+                  moduleName = "easyportrait"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/majimadaisuke/Downloads/easyportrait/easyportrait/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

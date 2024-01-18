@@ -1,0 +1,80 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "var_573"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Multiply" : 4,
+      "Ceil" : 4,
+      "Convolution" : 32,
+      "PoolingAverage" : 4,
+      "PoolingMax" : 1,
+      "ArgMax" : 1,
+      "Squeeze" : 1,
+      "ActivationReLU" : 25,
+      "UpsampleNearestNeighbor" : 3,
+      "Concat" : 1,
+      "Add" : 13,
+      "GreaterThan" : 4,
+      "WhereBroadcastable" : 4,
+      "ActivationSigmoid" : 3,
+      "ExpandDims" : 2,
+      "Equal" : 3,
+      "UpsampleBiLinear" : 1,
+      "Clip" : 1,
+      "ActivationLinear" : 1,
+      "Floor" : 4
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1",
+      "com.github.apple.coremltools.source" : "torch==2.1.0+cu121",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "skin",
+    "inputSchema" : [
+      {
+        "height" : "512",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "orig_imgs"
+      }
+    ],
+    "method" : "predict"
+  }
+]

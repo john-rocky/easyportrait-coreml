@@ -1,0 +1,174 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out0"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out1"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out2"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out3"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out4"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out5"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out6"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out7"
+      },
+      {
+        "height" : "512",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "out8"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Split" : 8,
+      "Concat" : 1,
+      "Linear" : 24,
+      "Gelu" : 8,
+      "LayerNorm" : 30,
+      "Transpose" : 90,
+      "Matmul" : 16,
+      "UpsampleBilinear" : 4,
+      "Relu" : 5,
+      "Mul" : 18,
+      "Cast" : 19,
+      "Equal" : 9,
+      "Add" : 17,
+      "ExpandDims" : 1,
+      "ReduceArgmax" : 1,
+      "Reshape" : 70,
+      "Conv" : 40,
+      "Softmax" : 9
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1",
+      "com.github.apple.coremltools.source" : "torch==1.13.1+cu117",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "height" : "512",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "512",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 512 × 512)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "generatedClassName" : "easyportrait",
+    "method" : "predict"
+  }
+]
